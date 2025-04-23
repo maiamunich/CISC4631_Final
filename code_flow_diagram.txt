@@ -1,0 +1,44 @@
+Project Directory: /Users/maiamunich/code/CISC4631_Final/
+
+Files Structure:
+┌────────────────────────────────────────────┐
+│ 1. data.csv (Original Data)                │
+│ 2. cleaned_data.csv (Preprocessed)         │
+│ 3. engineered_data.csv (Feature Engineered)│
+│ 4. Studentdropoutandacademicsuccess.ipynb  │
+└────────────────────────────────────────────┘
+
+Code Flow:
++-------------------+     +----------------------+     +----------------------+
+|   Data Loading    |     |  Data Preprocessing  |     | Feature Engineering |
+|   [data.csv]      | --> |  - Clean columns     | --> | - Create X_course   |
+|   - Read data     |     |  - Handle missing    |     | - Create y_target   |
+|   - Check info    |     |  - Initial encoding  |     | - Label encoding    |
++-------------------+     +----------------------+     +----------------------+
+           |                                                      |
+           |                                                      v
++-------------------+     +----------------------+     +----------------------+
+|    Evaluation     |     |   Model Training     |     |   Model Creation    |
+| - Decision tree   | <-- | - Fit model          | <-- | - DecisionTree      |
+| - Confusion matrix|     | - Make predictions   |     | - Set parameters    |
+| - Course analysis |     |                      |     | - Configure depth   |
++-------------------+     +----------------------+     +----------------------+
+
+Data Processing Pipeline:
+  data.csv → cleaned_data.csv → engineered_data.csv → Model → Results
+
+Notebook Execution Flow:
+1. Data Import & Validation
+2. Data Cleaning & Preprocessing
+3. Feature Engineering
+4. Model Creation & Training
+5. Evaluation & Visualization
+6. Statistical Analysis
+
+Output Files Generated:
+┌────────────────────────────────────────────┐
+│ - Decision Tree Visualizations             │
+│ - Confusion Matrix Plots                   │
+│ - Course Distribution Charts               │
+│ - Statistical Summary Tables               │
+└────────────────────────────────────────────┘ 
